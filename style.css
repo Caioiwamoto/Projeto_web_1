@@ -12,6 +12,7 @@ header {
   background-position: 40%;
   right: 0;
   background-color: #030142;
+  background-size: cover;
 }
 * {
   padding: 0;
