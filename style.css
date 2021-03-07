@@ -22,15 +22,6 @@ header {
 div {
   display: block;
 }
-.text-image-contianer {
-  max-width: 1290px;
-  height: 586px;
-  padding: 200px 20px 20px;
-  color: #fff;
-  font-size: 28px;
-  max-width: 86%;
-  font-weight: bold;
-}
 .text-image-contianer strong {
   color: #f32404;
 }
@@ -47,7 +38,12 @@ body {
   z-index: 1;
   padding: 0 20px 0 40px;
 }
-
 h1 {
-  margin-right: 25%;
+  margin-right: 1%;
+}
+
+.text-image-contianer {
+  height: 586px;
+  padding: 200px 20px 20px;
+  color: #fff;
 }
