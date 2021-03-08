@@ -20,6 +20,13 @@ header {
   box-sizing: border-box;
   outline: 0;
 }
+.logo img{
+  width: 100%;
+  max-width: 70px;
+  position: absolute;
+  left: 30px;
+  top: 10px;
+}
 div {
   display: block;
 }
