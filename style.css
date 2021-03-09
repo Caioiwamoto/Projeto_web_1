@@ -31,7 +31,13 @@ header {
   display: inline-block;
   position: relative;
   left: 150px;
-  top: 20px;
+  padding: 20px;
+}
+.text-image-faixa{
+  color:#fff;
+}
+.text-image-faixa strong {
+  color: #f32404;
 }
 div {
   display: block;
