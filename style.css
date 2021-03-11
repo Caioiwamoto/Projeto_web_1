@@ -4,7 +4,6 @@
   box-sizing: border-box;
   outline: 0;
   font-family: freight-sans-pro, sans-serif;
-  
 }
 header {
   width: 100%;
@@ -23,14 +22,14 @@ header {
   background-size: cover;
 }
 
-.logo img{
+.logo img {
   width: 100%;
   max-width: 70px;
   position: absolute;
   left: 30px;
   top: 10px;
 }
-.faixa li{
+.faixa li {
   display: inline-block;
   position: relative;
   left: 150px;
@@ -39,8 +38,8 @@ header {
   font-style: normal;
   font-weight: 1000;
 }
-.text-image-faixa{
-  color:#fff;
+.text-image-faixa {
+  color: #fff;
 }
 .text-image-faixa strong {
   color: #f32404;
@@ -48,63 +47,76 @@ header {
   font-style: normal;
   font-weight: 1000;
 }
-.fa-search{
+.fa-search {
   color: #f32404;
   position: absolute;
   left: 990px;
   bottom: 20px;
 }
-.fa-question-circle{
-  color:#f32404;
+.fa-question-circle {
+  color: #f32404;
   position: absolute;
   left: 1050px;
   bottom: 20px;
 }
-.button-cadastrar button{
-  color:#fff;
+.button-cadastrar button {
+  color: #fff;
   position: absolute;
   left: 1100px;
   bottom: 10px;
-  border:1px solid #f32404;
-  background:#f32404;
-  border-radius:8px;
-  display:inline-block;
-  cursor:pointer;
-  font-size:15px;
+  border: 1px solid #f32404;
+  background: #f32404;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 15px;
   font-weight: 1000;
   padding-bottom: 2px;
   width: 126px;
   height: 45px;
-  text-decoration:none;
+  text-decoration: none;
 }
-.button-login button{
-  color:#fff;
+.button-login button {
+  color: #fff;
   position: absolute;
   left: 1230px;
   bottom: 10px;
-  border:none;
-  background:#f3240400;
-  border-radius:8px;
-  display:inline-block;
-  cursor:pointer;
-  font-size:15px;
+  border: none;
+  background: #f3240400;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 15px;
   font-weight: 1000;
   width: 126px;
   height: 45px;
-  text-decoration:none;
+  text-decoration: none;
 }
-.button-login button:hover{
+.button-login button:hover {
   background: #fff;
   color: #272221;
   transition: all 0.1s linear;
 }
+
+.new-account-button {
+  color: #fff;
+  border: 1px solid #f45204;
+  background: #f45204;
+  border-radius: 24px;
+  padding: 16px 24px 16px 24px;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 15px;
+  margin-left: 4%;
+}
 div {
   display: block;
 }
-.text-image-contianer strong {
+.text-image-container strong {
   color: #f32404;
 }
-.text-image-contianer strong:nth-child(1) {
+.text-image-container strong:nth-child(1) {
   text-transform: uppercase;
 }
 
@@ -119,25 +131,38 @@ h1 {
   margin-right: 1%;
 }
 
-.text-image-contianer {
+.text-image-container {
   height: 586px;
   padding: 200px 20px 20px;
   color: #fff;
 }
 
+.fab-button {
+  color: #fff;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 1px solid #f45204;
+  background-color: #f45204;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  margin: 20px;
+}
 @media screen and (min-width: 1300px) {
-  .text-image-contianer {
+  .text-image-container {
     background-color: transparent;
     max-width: 70%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1300px) {
-  .text-image-contianer {
+  .text-image-container {
     max-width: 86%;
   }
 }
 @media screen and (max-width: 767px) {
-  .text-image-contianer {
+  .text-image-container {
     padding: 0px 0 20px;
   }
   .title {
