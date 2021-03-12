@@ -13,6 +13,9 @@ header {
   top: 0;
   display: block;
 }
+.fa-bars{
+  display: none;
+}
 .background {
   background-image: url(imageDesktop.jpg);
   height: 586px;
