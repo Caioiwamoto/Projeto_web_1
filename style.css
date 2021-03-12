@@ -172,14 +172,6 @@ h1 {
   }
 }
 @media screen and (max-width: 767px) {
-  .fa-bars{
-    color: #fff;
-    position: absolute;
-    left: 490px;
-    bottom: 25px;
-    font-size: 25px;
-    display: block !important;
-  }
   .text-image-container {
     padding: 0px 0 20px;
   }
@@ -205,22 +197,38 @@ h1 {
     background-color: #030142;
     
   }
-  .faixa li {
-  display:  none;
+  .center{
+    width: 100%;
+    position: absolute;
   }
   .logo img {
     width: 100%;
     max-width: 70px;
-    position: absolute;
-    left: 240px;
-    top: 5px;
+    position: relative;
+    margin-left: 39%;
+  }
+  .fa-bars{
+    float: right;
+    color: #fff;
+    position: relative;
+    margin-left: 490px;
+    bottom: 20px;
+    right: 25px;
+    font-size: 25px;
+    display: block !important;
   }
   .fa-search{
+    float: left;
     color: #fff;
     position: absolute;
     left: 20px;
-    bottom: 25px;
-    font-size: 25px;
+    bottom: 20px;
+    font-size: 20px;
   }
+  .faixa li {
+  display:  none;
+  }
+  
+  
   
 }
