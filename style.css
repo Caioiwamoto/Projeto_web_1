@@ -55,7 +55,7 @@ header {
   left: 990px;
   bottom: 20px;
 }
-.fa-question-circle {
+.question-circle-header {
   color: #f32404;
   position: absolute;
   left: 1050px;
@@ -112,6 +112,7 @@ header {
   font-size: 15px;
   margin-left: 4%;
 }
+
 div {
   display: block;
 }
@@ -121,7 +122,9 @@ div {
 .text-image-container strong:nth-child(1) {
   text-transform: uppercase;
 }
-
+.question-icon {
+  color: #ffff;
+}
 .title {
   position: relative;
   font-size: 42px;
@@ -138,7 +141,10 @@ h1 {
   padding: 200px 20px 20px;
   color: #fff;
 }
-
+.fab-button:hover {
+  width: 200px;
+  transition: all 0.1s linear;
+}
 .fab-button {
   color: #fff;
   position: absolute;
