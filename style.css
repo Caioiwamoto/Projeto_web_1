@@ -18,7 +18,6 @@ header {
   height: 586px;
   background-position: 40%;
   right: 0;
-  background-color: #030142;
   background-size: cover;
 }
 
@@ -173,7 +172,6 @@ h1 {
   }
   .background {
     background-image: url(imageMobile.jpg);
-    background-color: #030142;
     background-position: bottom;
     margin: 0;
     padding: 100px 0 20px;
@@ -182,8 +180,34 @@ h1 {
     width: 100%;
     height: 700px;
     top: 0;
+    z-index: -1;
   }
   header {
     background-color: #030142;
+    
+  }
+  .faixa li {
+  display:  none;
+  }
+  .logo img {
+    width: 100%;
+    max-width: 70px;
+    position: absolute;
+    left: 240px;
+    top: 5px;
+  }
+  .fa-search{
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    bottom: 25px;
+    font-size: 25px;
+  }
+  .fa-bars{
+    color: #fff;
+    position: absolute;
+    left: 490px;
+    bottom: 25px;
+    font-size: 25px;
   }
 }
