@@ -25,48 +25,99 @@ header {
   background-size: cover;
 }
 
-.logo img {
-  width: 100%;
-  max-width: 70px;
-  position: absolute;
-  left: 30px;
-  top: 10px;
+.center-content{
+  max-width: 1290px;
+  margin: 0 auto;
 }
-.faixa li {
+
+.logo img {
+  width: 72px;
+  height: auto;
+  display: block;
+  margin: 10px 10px 10px 0;
+  float: left;
+}
+
+.logo{
+  padding-left: 20px;
+}
+
+ul li{
   display: inline-block;
   position: relative;
-  left: 150px;
+  left: 10px;
   padding: 20px;
   font-size: 13px;
-  font-style: normal;
   font-weight: 1000;
-}
-.text-image-faixa {
+  font-style: normal;
   color: #fff;
+  cursor: pointer;
 }
-.text-image-faixa strong {
+
+ul li:nth-child(6){
+  display: none;
+}
+
+ul li:before{
+  content: "";
+  display: block;
+  float: left;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #fff;
+  margin: 8px 6px 0 0;
+}
+
+ul .simulador {
   color: #f32404;
   font-size: 13px;
   font-style: normal;
   font-weight: 1000;
 }
+
+ul li.simulador:before{
+  content: "";
+  display: block;
+  float: left;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #f32404;
+  margin: 8px 6px 0 0;
+}
+
 .fa-search {
   color: #f32404;
-  position: absolute;
-  left: 990px;
-  bottom: 20px;
+  position: relative;
+  font-size: 1.8rem;
+  right: 100px;
+  bottom: 95px;
 }
+
+.search-mobile a img{
+  display: none;
+}
+
+
 .question-circle-header {
   color: #f32404;
   position: absolute;
-  left: 1050px;
-  bottom: 20px;
+  right: 270px;
+  bottom: 94px;
 }
+
+.buttons {
+  display: flex;
+  position: relative;
+  bottom: 60px;
+}
+
 .button-cadastrar button {
   color: #fff;
-  position: absolute;
-  left: 1100px;
-  bottom: 10px;
+  position: relative;
   border: 1px solid #f32404;
   background: #f32404;
   border-radius: 8px;
@@ -81,9 +132,7 @@ header {
 }
 .button-login button {
   color: #fff;
-  position: absolute;
-  left: 1230px;
-  bottom: 10px;
+  position: relative;
   border: none;
   background: #f3240400;
   border-radius: 8px;
@@ -114,9 +163,7 @@ header {
   margin-left: 4%;
 }
 
-div {
-  display: block;
-}
+
 .text-image-container strong {
   color: #f32404;
 }
@@ -160,6 +207,29 @@ h1 {
   margin: 20px;
 }
 
+.nav-right{
+  margin: 11px 0;
+  position: relative;
+  float: right;
+}
+
+@media (max-width: 1108px) {
+  ul li{
+    left: -10px;
+    padding: 20px;
+    margin: 0 -20px 0 0;
+  }
+}
+
+@media (max-width: 1005px) {
+  ul li:nth-child(3), ul li:nth-child(4){
+    display: none;
+  }
+  ul li:nth-child(6){
+    display: inline-block;
+  }
+}
+
 @media screen and (min-width: 1300px) {
   .text-image-container {
     background-color: transparent;
@@ -174,6 +244,15 @@ h1 {
 @media screen and (max-width: 767px) {
   .text-image-container {
     padding: 0px 0 20px;
+  }
+  .button-cadastrar button {
+    display: none;
+  }
+  .button-login button {
+    display: none;
+  }
+  ul li:nth-child(6){
+    display: none;
   }
   .title {
     position: relative;
@@ -197,38 +276,49 @@ h1 {
     background-color: #030142;
     
   }
-  .center{
-    width: 100%;
-    position: absolute;
-  }
+
   .logo img {
-    width: 100%;
-    max-width: 70px;
+    margin: 5px auto;
+    bottom: 35px;
+    float: none;
+    z-index: 4;
     position: relative;
-    margin-left: 39%;
   }
+
   .fa-bars{
     float: right;
     color: #fff;
     position: relative;
-    margin-left: 490px;
-    bottom: 20px;
-    right: 25px;
+    bottom: 65px;
+    right: 15px;
     font-size: 25px;
     display: block !important;
   }
+
+  .nav-right{
+    margin: 10px 0;
+    position: relative;
+    display: inline-block;
+    
+  }
+
+  .search-mobile a img{
+    display: block;
+    width: 25px;
+    margin-top: 12px;
+    margin-left: 15px;
+  }
+
   .fa-search{
-    float: left;
-    color: #fff;
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-    font-size: 20px;
+    display: none !important;
   }
+
+  .nav-right .fa-question-circle{
+    display: none;
+  }
+
   .faixa li {
-  display:  none;
+    display:  none;
   }
-  
-  
   
 }
